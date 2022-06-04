@@ -2,7 +2,7 @@
 
 ...
 
-## Taller #1: figuras geométricas
+## Taller #1: figuras geométricas.
 
 - Primer paso: definir las fórmulas
 - Segundo paso: implementar la fórmulas en JavaScript 
