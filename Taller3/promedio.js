@@ -1,15 +1,3 @@
-function CalcularPromedioAritmetica(lista) {
-const sumaLista = lista.reduce(
-    function (valorAcumulado = 0, nuevoElemento) {
-        return valorAcumulado + nuevoElemento;
-    }
-);
-
-const promedioLista = sumaLista / lista.length;
-console.log(promedioLista)
-}
-
-
 // Con este .sort logramos ordenar los numeros <3
 function CalcularMediaAritmetico(listaPro) {
     listaPro.sort(function(a, b){return a - b;});
@@ -63,3 +51,22 @@ function CalcularMediaAritmetico(listaPro) {
     );
 
     const moda = listArray1[listArray1.length - 1];
+
+
+function CalcularPromedio(){
+//Variables para recojer datos de la web<3
+let listaPromedio = [];
+const inputPromedio = document.getElementById("valoresPromedio");
+let nuevaLongitud = listaPromedio.push(inputPromedio.value);
+console.log(`${listaPromedio}`);
+
+//Calcular Promedio aritmetico
+    const sumaLista = listaPromedio.reduce(
+    function (valorAcumulado = 0, nuevoElemento) {
+    return valorAcumulado + nuevoElemento;
+    }
+);
+
+const promedioLista = sumaLista / listaPromedio.length;
+// alert(`${promedioLista}`)
+}   
