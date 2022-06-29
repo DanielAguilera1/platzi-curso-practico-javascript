@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <title>Shopping</title>
 </head>
-<body>
-    <h1>Porcentajes y Descuentos</h1>
-
-    <form>
-        <label for="inputPrice">Precio de tu producto</label>
-        <input id="inputPrice" type="number">
-        <label for="inputDesc">Descuento</label>
-        <input id="inputDesc" type="number">
-        <label for="inputCupon">Cupon</label>
-        <input id="inputCupon" type="text">
-        <button type="button" onclick="CalcularWithButton()">Calcular</button>
+<body> 
+    <div class="contenedor"> 
+        <h1>Descuentos</h1>
+        <form>
+        <div class="contenedorCont box1">
+            <label for="inputPrice">Precio de tu producto</label>
+            <input id="inputPrice" type="number" autocomplete="off">
+        </div>
+        <div class="contenedorCont box2">
+            <label for="inputDesc">Descuento</label>
+            <input id="inputDesc" type="number" autocomplete="off">
+        </div>
+        <div class="contenedorCont box3">
+            <label for="inputCupon">Cupon</label>
+            <input id="inputCupon" type="text" autocomplete="off">
+            <p id="textCupon"></p>            
+        </div>
+        <button class="btn-style" type="button" autocomplete="off" onclick="CalcularWithButton()">Calcular</button>
         <p id="priceP"></p>
     </form>
-
+    </div>
+    
     <script src="descuentos.js"></script>
 </body>
 </html>

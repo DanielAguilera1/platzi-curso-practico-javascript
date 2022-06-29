@@ -11,23 +11,24 @@ function CalcularWithButton(){
     const priceDesc = parseFloat(inputDesc.value);
     const inputCupon = document.getElementById("inputCupon");
     let cuponValue = inputCupon.value;
+    let resultCupon = document.getElementById("textCupon")
 
     //verificar cupon y darle su respectivo descuento
     if (cupones[0] === cuponValue) {
         cuponValue = 10;
-        alert(`omg tienes un cupotilin ${cuponValue}%`);
+        resultCupon.innerText = (`omg tienes un cupotilin ${cuponValue}%`);
     }
-    if (cupones[1] === cuponValue) {
+    else if (cupones[1] === cuponValue) {
         cuponValue = 20;
-        alert(`omg tienes un omgcupotilin ${cuponValue}%`);
+        resultCupon.innerText = (`omg tienes un omgcupotilin del ${cuponValue}%`);
     }
-    if (cupones[2] === cuponValue) {
+    else if (cupones[2] === cuponValue) {
         cuponValue = 30;
-        alert(`esta monda si funciono ${cuponValue}%`);
+        resultCupon.innerText = (`esta monda si funciono ${cuponValue}%`);
     }
     else {
-        alert("no valido esa monda")
         cuponValue = 0;
+        resultCupon.innerText = ("");
     }
  
     if ( cuponValue >= 1 ) {

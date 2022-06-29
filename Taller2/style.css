@@ -1,0 +1,78 @@
+:root{
+    font-family: 'Lexend', sans-serif;
+    padding: 0;
+    margin: 0;
+    --white: white;
+    --black: black;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/564x/e9/0e/9a/e90e9ac5dd1ace1f9611540827634741.jpg");
+    background-size: 1540px, contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+} 
+
+input {
+    border: 2px solid #e1e5ee;
+    border-radius: 0.5rem;
+    color: white;
+    outline: none;
+    padding: 0.4rem;
+    background: none;
+}
+
+.btn-style {
+    display: inline-block;
+    border: 2px solid var(--white);
+    padding: 10px 40px;
+    color: var(--black);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--white);
+    transition: color 0.5s, background 0.5s;
+    font-size: 1em;
+    min-width: 140px;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+}
+.btn-style:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.contenedor{
+    background: rgba( 55, 26, 55, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    grid-template-rows: repeat(3,100px);
+    height: 440px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+
+.contenedorCont{
+    display: flex;
+    display: block;
+    margin: 15px;
+}
+label{
+    display: block;
+    font-size: 17px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
