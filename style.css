@@ -4,9 +4,13 @@
     margin: 0;
     --white: white;
     --black: black;
+    --EpicoPapus: rgb(22 66 104 / 40%);
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("https://i.pinimg.com/564x/e9/0e/9a/e90e9ac5dd1ace1f9611540827634741.jpg");
     background-size: cover;
     background-position: center;
@@ -37,26 +41,18 @@ body{
 }
 
 .contenedor{
-    background: rgba( 55, 26, 55, 0.4 );
+    background: var(--EpicoPapus);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    height: 440px;
-    width: 300px;
+    text-align: center;
+    padding: 20px;
 }
-
-
 
 .centralbox{
     display: flex;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 100px;
     flex-direction: column;
+    width: 300px;
+    align-items: center;
 }
