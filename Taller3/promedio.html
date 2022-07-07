@@ -8,15 +8,28 @@
     <title>Promedio</title>
 </head>
 <body>
-    <div class="contenedor">
+    <div class="QuitButton">
+        <a href="/platzi-curso-practico-javascript/index.html">salir</a>
+    </div>
+    <div class="contenedor centralbox">
         <form>
             <h1>Valores</h1>
             <label for="valoresPromedio">[1,2,3,4,5]</label>
             <input id="valoresPromedio" autocomplete="off">
-            <button class="btn-style" type="button" autocomplete="off" onclick="CalcularPromedio()">Calcular</button>
-            <h1>Promedio</h1>
-            <h1>Mediana</h1>    
-            <h1>Moda</h1>
+            <button class="btn-style" type="button" autocomplete="off" onclick="CalcularPromedio()">Calcular</button>            
+            <div class="box-result"> 
+                <h3>Promedio</h3>
+                <p id="promedioValueHTML"></p>
+            </div>
+           <div class="box-result">
+                <h3>Mediana</h3>  
+                <p id="medianaValueHTML"></p> 
+            </div>
+             <div class="box-result">
+                <h3>Moda</h3>
+                <p id="modaValueHTML"></p>
+            </div>
+            
         </form>
     </div>
 

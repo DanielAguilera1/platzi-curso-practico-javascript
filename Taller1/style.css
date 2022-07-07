@@ -1,0 +1,17 @@
+:root{
+    font-family: 'Lexend', sans-serif;
+    padding: 0;
+    margin: 0;
+    --white: white;
+    --black: black;
+}
+
+body{
+    background-image: url("https://i.pinimg.com/564x/e9/0e/9a/e90e9ac5dd1ace1f9611540827634741.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.griduwu{
+    display: grid;
+}
